@@ -1,0 +1,201 @@
+/*font-family: 'Anton', sans-serif; /* titles */
+/*font-family: 'roboto mono', monospace; /* text */
+/* colors
+#253529 black leather jacket
+#d1001c blood orange.
+#f0f8ff alice blue (white)
+#ffffff white.
+#000000 black 
+#641c16 deep red.
+text shadows 
+	-4px -4p 0 #000000,
+	-4px -4p 0 #000000,
+	-4px -4p 0 #000000,
+	-4px -4p 0 #000000; test it out to see if this will work......
+
+units of measurement.
+em = relative to the font-size of the element.  2em means 2 times the size of the current font. 
+vw = relative to 1% of the width of the viewport
+vh = relative to 1% of viewports smaller dimension.
+	*/
+
+
+body { 
+	background-color:#000000;
+	font-family: 'anton', sans-serif; /*titles*/
+	font-size: 32px;
+}
+span {
+	font-size: 32px;
+}
+.bkg { 
+	background-image: url("../images/imageedit_7_5846747793.png");/*dont forget the image file path*/
+	background-position: center;
+	background-size: cover;
+	width:100vw;
+	min-height:100vh;
+	height:auto;
+	overflow: hidden;
+}
+.container-head {
+background-color: #641c16; /* red, like dark red*/
+padding: 1.5em;
+position: relative;
+top:2em;
+}
+/*.row-head {} commented out for the purpose of changing later!*/
+.col-title-pic {
+	width: auto; 
+	padding-right: 2em;
+}
+.title-pic {
+	width: 150px;
+	height: auto;
+}
+.col-title {
+	color: #ffffff;
+	padding: calc((150px - 4em)/2) 0 0 0;
+	margin: 0;
+	width: calc(100% - 150px - 4em);
+}
+.col-title h1 {
+	font-size: 4em;
+	padding: 0;
+	margin: 0;
+	font-family: "anton", sans-serif; /*this is for the titles*/
+	line-height: 1;
+	letter-spacing: 0.1em;
+}
+#name-title {
+	color: #ffffff;
+}
+/* adjusting max and minimum width.*/
+@media screen and (max-width: 10088px) and (min-width: 830px) {
+	.col-title {
+		padding: calc((150px -2.75em)/2) 0 0 0;
+	}
+	.col-title h1 {
+		font-size: 2.75;
+	}
+}
+@media screen and (max-width: 829px) and (min-width: 570px) {
+	.col-title {
+		padding: calc((150px - 5.5em)/2) 0 0 0;
+	}
+	.col-title h1 {
+		font-size: 2.75em;
+	}
+}
+@media screen and (max-width: 569px) and (min-width: 513px) {
+	.col-title {
+		padding: calc((150px - 4.5em)/2) 0 0 0;
+	}
+	.col-title h1 {
+		font-size: 2.25em;
+	}
+	.col-title-pic {
+		margin: 0;
+		padding: 0 .75em 0 .25em;
+	}
+}
+@media screen and (max-width: 512px) {
+	.col-title {
+		padding: calc((150px - 6.75em)/2) 0 0 0;
+	}
+	.col-title h1 {
+		font-size: 2.25em;
+	}
+	.col-title-pic {
+		margin: 0;
+		padding: 0 .75em 0 .25em;
+	}
+}
+
+#name-submit, #name-input {
+	padding: 0.25em;
+	border: none;
+	border-radius: 5px;
+}
+#name-input {
+	margin-bottom: 1em;
+}
+#name-submit {
+	background-color: #ffffff;
+}
+.col-start {
+	padding-top: 3em;
+	text-align: center;
+}
+.col-start span {
+	font-family: "anton", sans-serif; /*titles*/
+	color: #ffffff;
+}
+.container-play {
+	padding-top: 3em;
+}
+.row-play-choice {
+	display: none;
+}
+.col-play-pic {
+	text-align: center;
+}
+.row-play-choice span {
+	color: #ffffff;
+	font-family: "anton", sans-serif;
+}
+@media screen and (max-width: 699px) {
+	.col-play-pic {
+		width: calc(33%);
+	}
+	.col-play-pic img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 665px) {
+	.row-play-choice span {
+		font-size: 1.25em;
+	}
+}
+.row-play-battle {
+	width: 100%;
+	margin: 0;
+}
+.col-my-play, .col-opponent-play {
+	text-align: center;
+
+}
+.battle-img {
+	height: auto;
+	width: 100%;
+	max-width: 400px;
+}
+.winning-pic .battle-img {
+	width: 50%;
+	height: auto;
+	max-width: 400px;
+	margin-top: .75em;
+}
+
+.pic-my-play, .pic-opponent-play, .winning-pic {
+	text-align: center;
+}
+.my-move-caption, .opponent-move-caption, .outcome-message, .col-reckoning {
+	text-align: center;
+}
+.my-move-caption span, .opponent-move-caption span, .outcome-message span {
+	color: #ffffff;  
+	font-family: 'anton', sans-serif; 
+}
+.row-score {
+	padding: 1em 0;
+}
+.col-score {
+	text-align: center;
+}
+.col-score span {
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'anton', sans-serif; /* titles */
+	text-align: center;
+}
